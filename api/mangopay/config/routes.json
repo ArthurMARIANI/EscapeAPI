@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "POST",
+      "path": "/mangopay",
+      "handler": "Mangopay.createMangoUser",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mangopay",
+      "handler": "Mangopay.createMangoBankAccount",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mangopay",
+      "handler": "Mangopay.createMangoWallet",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mangopay",
+      "handler": "Mangopay.createMangoCard",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mangopay",
+      "handler": "Mangopay.processMangoPayIn",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mangopay",
+      "handler": "Mangopay.processMangoRefund",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

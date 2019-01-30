@@ -1,0 +1,111 @@
+{
+  "connection": "default",
+  "info": {
+    "name": "user",
+    "description": ""
+  },
+  "attributes": {
+    "username": {
+      "type": "string",
+      "minLength": 3,
+      "unique": true,
+      "configurable": false,
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "minLength": 6,
+      "configurable": false,
+      "required": true
+    },
+    "provider": {
+      "type": "string",
+      "configurable": false
+    },
+    "password": {
+      "type": "password",
+      "minLength": 6,
+      "configurable": false,
+      "private": true
+    },
+    "resetPasswordToken": {
+      "type": "string",
+      "configurable": false,
+      "private": true
+    },
+    "role": {
+      "model": "role",
+      "via": "users",
+      "plugin": "users-permissions",
+      "configurable": false
+    },
+    "first_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "phone_number": {
+      "type": "string"
+    },
+    "address": {
+      "type": "text"
+    },
+    "postcode": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "nationality": {
+      "type": "string"
+    },
+    "avatar": {
+      "type": "text"
+    },
+    "subscription_day": {
+      "type": "date"
+    },
+    "last_connection": {
+      "type": "date"
+    },
+    "birthday": {
+      "type": "date"
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "nb_of_parties": {
+      "type": "integer"
+    },
+    "mongoPay_user_id": {
+      "type": "string"
+    },
+    "mongoPay_wallet_id": {
+      "type": "string"
+    },
+    "mongoPay_card_id": {
+      "type": "string"
+    },
+    "mongoPay_bankAccount_id": {
+      "type": "string"
+    },
+    "cagnotte": {
+      "type": "string"
+    },
+    "list_teams": {
+      "collection": "team",
+      "via": "list_players"
+    },
+    "gender": {
+      "type": "string"
+    },
+    "mango_transactions": {
+      "type": "json"
+    }
+  },
+  "collectionName": "users-permissions_user"
+}

@@ -1,0 +1,61 @@
+{
+  "connection": "default",
+  "collectionName": "teams",
+  "info": {
+    "name": "team",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "titre": {
+      "type": "string"
+    },
+    "room": {
+      "model": "room",
+      "via": "teams"
+    },
+    "list_players": {
+      "collection": "user",
+      "dominant": true,
+      "via": "list_teams",
+      "plugin": "users-permissions"
+    },
+    "admin_id": {
+      "type": "string"
+    },
+    "reservation": {
+      "type": "string"
+    },
+    "email_reservation": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "nb_players": {
+      "type": "integer"
+    },
+    "nb_players_max": {
+      "type": "integer"
+    },
+    "date": {
+      "type": "date"
+    },
+    "bill_total": {
+      "type": "float"
+    },
+    "price": {
+      "type": "float"
+    },
+    "places_left": {
+      "type": "integer"
+    },
+    "tx_id": {
+      "type": "Array"
+    }
+  }
+}

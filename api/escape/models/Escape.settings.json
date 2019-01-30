@@ -1,0 +1,79 @@
+{
+  "connection": "default",
+  "collectionName": "escapes",
+  "info": {
+    "name": "escape",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "address": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "postcode": {
+      "type": "string"
+    },
+    "latitude": {
+      "type": "decimal"
+    },
+    "longitude": {
+      "type": "decimal"
+    },
+    "school_area": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "link": {
+      "type": "string"
+    },
+    "phone_number": {
+      "type": "integer"
+    },
+    "email": {
+      "type": "email"
+    },
+    "mangoPay_id": {
+      "type": "integer"
+    },
+    "mangoPay_wallet_id": {
+      "type": "integer"
+    },
+    "commission": {
+      "type": "decimal"
+    },
+    "partnership": {
+      "type": "boolean"
+    },
+    "name": {
+      "type": "string"
+    },
+    "peak_offPeak": {
+      "type": "string"
+    },
+    "validation_time": {
+      "type": "date"
+    },
+    "list_rooms": {
+      "collection": "room",
+      "via": "escape",
+      "dominant": true
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "special_dates": {
+      "type": "integer"
+    }
+  }
+}

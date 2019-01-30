@@ -1,0 +1,51 @@
+{
+  "name": "escape-game-v1.1",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application.",
+  "main": "./server.js",
+  "scripts": {
+    "setup": "cd admin && npm run setup",
+    "start": "node server.js",
+    "strapi": "node_modules/strapi/bin/strapi.js",
+    "lint": "node_modules/.bin/eslint api/**/*.js config/**/*.js plugins/**/*.js",
+    "postinstall": "node node_modules/strapi/lib/utils/post-install.js"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "eslint": "^3.12.2",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-react": "^6.8.0"
+  },
+  "dependencies": {
+    "knex": "latest",
+    "lodash": "4.x.x",
+    "mangopay2-nodejs-sdk": "^1.8.0",
+    "pg": "7.4.3",
+    "request": "^2.87.0",
+    "strapi": "3.0.0-alpha.12.6",
+    "strapi-bookshelf": "3.0.0-alpha.12.6",
+    "strapi-knex": "3.0.0-alpha.12.6"
+  },
+  "author": {
+    "name": "mathieugervais",
+    "email": "",
+    "url": ""
+  },
+  "maintainers": [
+    {
+      "name": "mathieugervais",
+      "email": "",
+      "url": ""
+    }
+  ],
+  "strapi": {
+    "uuid": "0c424ad4-83fe-4a84-bf17-88976e68b1c8"
+  },
+  "engines": {
+    "node": ">= 9.0.0",
+    "npm": ">= 5.0.0"
+  },
+  "license": "MIT"
+}

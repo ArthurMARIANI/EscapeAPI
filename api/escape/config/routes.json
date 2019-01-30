@@ -1,0 +1,68 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/escape",
+      "handler": "Escape.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/escape/:id",
+      "handler": "Escape.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/escape",
+      "handler": "Escape.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/escape/:id",
+      "handler": "Escape.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/escape/:id",
+      "handler": "Escape.destroy",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/escape/:id/relationships/:relation",
+      "handler": "Escape.createRelation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/escape/:id/relationships/:relation",
+      "handler": "Escape.updateRelation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/escape/:id/relationships/:relation",
+      "handler": "Escape.destroyRelation",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

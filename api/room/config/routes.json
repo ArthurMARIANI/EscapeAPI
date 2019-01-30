@@ -1,0 +1,68 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/room",
+      "handler": "Room.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/room/:id",
+      "handler": "Room.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/room",
+      "handler": "Room.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/room/:id",
+      "handler": "Room.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/room/:id",
+      "handler": "Room.destroy",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/room/:id/relationships/:relation",
+      "handler": "Room.createRelation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/room/:id/relationships/:relation",
+      "handler": "Room.updateRelation",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/room/:id/relationships/:relation",
+      "handler": "Room.destroyRelation",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

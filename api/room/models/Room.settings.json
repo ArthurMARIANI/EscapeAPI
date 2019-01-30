@@ -1,0 +1,56 @@
+{
+  "connection": "default",
+  "collectionName": "rooms",
+  "info": {
+    "name": "room",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "theme": {
+      "type": "string"
+    },
+    "teams": {
+      "collection": "team",
+      "dominant": true,
+      "via": "room"
+    },
+    "difficulty": {
+      "type": "string"
+    },
+    "min_place_number": {
+      "type": "integer"
+    },
+    "max_place_number": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "text"
+    },
+    "escape": {
+      "model": "escape",
+      "via": "list_rooms"
+    },
+    "name": {
+      "type": "string"
+    },
+    "starting_time": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "price_peak_hours": {
+      "type": "string"
+    },
+    "price_offPeak_hours": {
+      "type": "string"
+    }
+  }
+}
